@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* css reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color:#fff;
+  background:#a1c3ff;
+}
+
+h1,h2{
+  margin-bottom: 15px;  
+}
+
+img{
+    max-width:400px ;
+}
+
+
+/* navbar */
+.navbar{
+  background:#3474e6;
+  height: 60px;
+  font-size: large;
+  padding:0 30px;
+}
+.navbar .container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width:1100px;
+  margin:0 auto;
+  max-height: 100%;
+}
+.navbar .logo{
+  padding-top: 10px;
+  font-size: 35px;
+}
+.navbar ul {
+  display:flex;
+  list-style: none;
+  
+}
+.navbar ul li {
+  padding:10px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bold;
+}
+.navbar ul li a:hover{
+  color:lightblue;
+}
+
+/* showcase */
+.show-case{
+  background:#0151cc; 
+  min-height: 400px;
+  
+}
+.show-case .container{
+  display: flex;
+  max-width: 1100px;
+  margin:0 auto;
+  padding:0 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.show-case .container h1{
+  font-size: 50px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.show-case .container p{
+  font-size: 18px;
+}
+/* Fotter */
+.feature .container{
+  display:flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin:0 auto;
+  min-height: 100%;
+  padding:20px;
+}
+.box{
+  background-color: #0151cc;
+  border-radius: 20px;
+  margin:10px 15px;
+  padding:10px 30px;
+  
+}
+.box i { 
+  padding-right:10px;
+}
+.box h1{
+  font-size:25px;
+  font-weight: bolder;
+ 
+}
+
+/* meida query */
+
+@media(max-width:769px){
+  .show-case .container{
+    flex-direction:column;
+    padding-top:30px;
+    text-align: center;
+  }
+
+  .feature .container{
+    flex-direction: column;
+    text-align: center;
+    padding:20px 0; 
+    max-width: 80vw;
+  }
+}
